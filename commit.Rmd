@@ -1,0 +1,9 @@
+
+# First commit (10/26/2023)
+
+```{bash eval=F}
+cd /Users/gepolianochaves/Desktop/Gepoliano/Ex-Bolsistas/novation_website
+git add ./  
+git commit -m "First commit"
+git push -u origin 
+```

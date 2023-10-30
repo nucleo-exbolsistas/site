@@ -1,0 +1,27 @@
+name: "novation-website"
+navbar:
+  title: "Núcleo de vivências, estudos e lutas de ex-bolsistas brasileiros no exterior"
+  type: "inverse"
+  left:
+    - text: "Home"
+      icon: "fa-home"
+      href: index.html
+    - text: "Sobre nós"  
+      icon: fa-info
+      href: "about.html"
+    - text: "Q&A Novação (Avaliação/Estudo de Casos)"
+      icon: "fa-solid fa-user"
+      href: "q_a_novacao.html"
+    - text: "Novação: Dados Sobre Ex-Bolsistas"
+      icon: "fa-solid fa-chart-simple"
+      href: "novacao_research_questions.html"
+    - text: "Nova Proposta de Novação"
+      icon: fa-book
+      menu:
+        - text: "Nova Proposta de Novação"
+        - text: "a. Pontos a serem incluídos na nova proposta de novação"
+          href: "documents/proposta_novacao.pdf"
+
+output:
+  html_document:
+    theme: readable

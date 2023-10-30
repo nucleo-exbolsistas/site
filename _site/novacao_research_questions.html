@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>novacao_research_questions.knit</title>
+
+<script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<link href="site_libs/faq-0.1.0/style.css" rel="stylesheet" />
+<script src="site_libs/faq-binding-0.1.1/faq.js"></script>
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Núcleo de vivências, estudos e lutas de ex-bolsistas brasileiros no exterior</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Home
+  </a>
+</li>
+<li>
+  <a href="about.html">
+    <span class="fa fa-info"></span>
+     
+    Sobre nós
+  </a>
+</li>
+<li>
+  <a href="q_a_novacao.html">
+    <span class="fa fa-solid fa-user"></span>
+     
+    Q&amp;A Novação (Avaliação/Estudo de Casos)
+  </a>
+</li>
+<li>
+  <a href="novacao_research_questions.html">
+    <span class="fa fa-solid fa-chart-simple"></span>
+     
+    Novação: Dados Sobre Ex-Bolsistas
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-book"></span>
+     
+    Nova Proposta de Novação
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Nova Proposta de Novação</li>
+    <li>
+      <a href="documents/proposta_novacao.pdf">a. Pontos a serem incluídos na nova proposta de novação</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div class="faq html-widget html-fill-item-overflow-hidden html-fill-item" id="faq" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="faq">{"x":{"data":{"question":["1) Quais os motivos pelos quais os ex-bolsistas não cumprem o período de interstício?","2)  Ex-bolsistas que estão no exterior contribuem para a formação de pessoal de nível superior e para o desenvolvimento da CT&I brasileira? \nSe sim, quais são os tipos de contribuições?","3) Qual é a percentagem de projetos de novação que foram aprovados por cada agência de fomento? Existe diferença nesta percentagem quando consideramos a agência de fomento?","4) Quais são os motivos que fazem com que as agências aprovem proporcionalmente um número diferente de propostas de novação?","5) Qual o motivo pelo qual os ex-bolsistas no exterior não encaminham projetos de novação?","6) Caso as regras de propostas de novação fossem mais flexíveis, ex-bolsistas de pesquisa teriam interesse em encaminhar propostas de novação?","7) Quanto tempo, em média, as agências de fomento demoram pra analisar um projeto de Novação?","8) Em que país estudaram a maior parte dos ex-bolsistas que iniciaram o ressarcimento financeiro para as agências de fomento?","9) Houve um aumento de ex-bolsistas que não retornaram pro Brasil após 2018?","10) A obrigatoriedade do retorno de ex-bolsistas para o Brasil e/ou o ressarcimento financeiro tem impactado negativamente a saúde de ex-bolsistas?"],"answer":["H: Hipotetizamos que alguns dos motivos incluem oferta imediata de emprego do exterior, falta de oportunidades na área de formação no Brasil, por motivos familiares. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/AfastamentoMotivos_Freq_Plot.png\">","Hipotetizamos que os ex-bolsistas no exterior contribuem para a formação de pessoal de nível superior e para o desenvolvimento da CT&I brasileira de várias formas, especialmente: \n- através de colaborações em artigos científicos e projetos de pesquisa com pesquisadores brasileiros, \n- formação e orientação na pós-graduação brasileira, \n- financiamentos de pesquisas no Brasil com recursos oriundos do exterior, \n- recebendo pesquisadores brasileiros no exterior, \n- por meio de engajamento com networks internacionais, \n- por meio de colaborações com organizações da sociedade civil e setor privado brasileiro\n <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/colaboracoes_tipo_plot.png\">","Hipotetizamos que menos de 10% dos projetos de novação foram aprovados considerando as duas agências de fomento. Hipotetizamos que proporcionalmente o CNPq tenha aprovado mais projetos de novação do que a CAPES.","H: Hipotetizamos que os motivos são relacionados\nDiferenças na flexibilização do prazo no qual o ex-bolsista pode submeter uma proposta de novação (CNPq não determina prazo e CAPES só permite até 120 dias antes da defesa de tese, no caso do doutorado), \nPossíveis diferenças de definições e parâmetros de uma proposta de Novação entre as agências\nDiferenças em processos internos de análise e avaliação de propostas de novação\nDiferenças na proporcionalidade e técnicos/ex-bolsistas entre as agências (CNPQ tem maior número de técnicos para analisar processos incluindo propostas de novação)","H: Hipotetizamos que um dos principais motivos é o valor elevado que o projeto de Novação que ex-bolsistas deve contemplar. Outro motivo é o fato das agências de fomento aceitarem apenas  projetos de Novação de cunho acadêmico não considerando propostas ligadas ao setor privado e sociedade civil. Hipotetizamos também que as diferentes regulamentações da novação criam situações nas quais ex-bolsistas não são aptos a submeter uma proposta de novação (ex: CNPQ não define prazos e CAPES exige que seja submetida em até 120 dias antes do término do doutorado, após a fase administrativa da cobrança). Além disso, a falta de conhecimento sobre mecanismo de Novação faz com muitos ex-bolsistas não o utilizem. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/df_novacao_nao_motivo_plot.png\">","H: Hipotetizamos que sim.","H: Hipotetizamos que demorem mais de um ano.","H: Hipotetizamos que a maior parte desses ex-bolsitas estudaram nos EUA e precisaram da CNO. Deste modo, assinaram a confissão de dívida com a União. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/Ressarcimento_Pais_Sim_Plot.png\">","H. Hipotetizamos que houve um aumento de ex-bolsistas que não retornaram pro Brasil após 2018 devido às crises política, econômica e sanitária que acometeram o país nesta época.","H. Hipotetizamos que a obrigatoriedade do retorno ao Brasil e/ou o ressarcimento financeiro tem causado diversos problemas de saúde mental aos ex-bolsistas."]},"faqtitle":"Respostas a questões formuladas, dados coletados, respondidos e analisados por ex-bolsistas CsF","expand_all_button_text":"+ Expand All","collapse_all_button_text":"- Collapse All","content_background_color":"white"},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
