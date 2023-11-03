@@ -6,8 +6,8 @@ Visamos divulgar perguntas relativas ao mundo do ex-bolsista CAPES/CNPq fora do 
 
 <img src="images/Logo com Texto.png" style="width:50%">
 
-Syllabus, past materials and lectures can be found in the following links:
+Materiais disponíveis no site:
 
 1) [Q&A Novação (Avaliação/Estudo de Casos)](https://propostas-novacao.netlify.app/q_a_novacao)
-2) [Syllabus](https://docs.google.com/document/d/1nxLkPso9fEMIKJOuPksHgw7dGR_v44Rb/edit)
-3) [Recordings](https://drive.google.com/drive/u/0/folders/1zZ7IHqfLDHtJtTj2MIaHk7Pco7EY5JO6)
+2) [Novação: Dados Sobre Ex-Bolsistas](https://propostas-novacao.netlify.app/novacao_research_questions)
+3) [Nova Proposta de Novação](https://propostas-novacao.netlify.app/documents/proposta_novacao.pdf)
