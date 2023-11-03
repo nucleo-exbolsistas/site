@@ -11,3 +11,6 @@ Materiais disponíveis no site:
 1) [Q&A Novação (Avaliação/Estudo de Casos)](https://propostas-novacao.netlify.app/q_a_novacao)
 2) [Novação: Dados Sobre Ex-Bolsistas](https://propostas-novacao.netlify.app/novacao_research_questions)
 3) [Nova Proposta de Novação](https://propostas-novacao.netlify.app/documents/proposta_novacao.pdf)
+4) [Minuta Portaria Conjunta CAPES/CNPq](https://docs.google.com/document/d/1PGka7oIH7SqtgjuMFyCMI5gvSJRDT8zNJ73WIcooJ9Q/edit?pli=1)
+5) [Ofício de Requerimento de Vista de Minuta da Portaria Conjunta do GTI](https://docs.google.com/document/d/1PGka7oIH7SqtgjuMFyCMI5gvSJRDT8zNJ73WIcooJ9Q/edit?pli=1)
+6) [Relatos de Ex-Bolsistas no Exterior](https://docs.google.com/document/d/1e5s-_0t80M7LNq6sxs0I0gHONYui4ii7RWD6uzrHuv8/edit?pli=1)
