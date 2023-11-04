@@ -33,9 +33,9 @@ Diferenças na proporcionalidade e técnicos/ex-bolsistas entre as agências (CN
 "H: Hipotetizamos que um dos principais motivos é o valor elevado que o projeto de Novação que ex-bolsistas deve contemplar. Outro motivo é o fato das agências de fomento aceitarem apenas  projetos de Novação de cunho acadêmico não considerando propostas ligadas ao setor privado e sociedade civil. Hipotetizamos também que as diferentes regulamentações da novação criam situações nas quais ex-bolsistas não são aptos a submeter uma proposta de novação (ex: CNPQ não define prazos e CAPES exige que seja submetida em até 120 dias antes do término do doutorado, após a fase administrativa da cobrança). Além disso, a falta de conhecimento sobre mecanismo de Novação faz com muitos ex-bolsistas não o utilizem. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/df_novacao_nao_motivo_plot.png\">", 
 "H: Hipotetizamos que sim.",
 "H: Hipotetizamos que demorem mais de um ano.",
-"H: Hipotetizamos que a maior parte desses ex-bolsitas estudaram nos EUA e precisaram da CNO. Deste modo, assinaram a confissão de dívida com a União. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/Ressarcimento_Pais_Sim_Plot.png\">",
+"H: Hipotetizamos que a maior parte desses ex-bolsitas estudaram nos EUA e precisaram da CNO. Deste modo, assinaram a confissão de dívida com a União. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/Ressarcimento_Pais_Per_Plot.png\">",
 "H. Hipotetizamos que houve um aumento de ex-bolsistas que não retornaram pro Brasil após 2018 devido às crises política, econômica e sanitária que acometeram o país nesta época.",
-"H. Hipotetizamos que a obrigatoriedade do retorno ao Brasil e/ou o ressarcimento financeiro tem causado diversos problemas de saúde mental aos ex-bolsistas.")
+"H. Hipotetizamos que a obrigatoriedade do retorno ao Brasil e/ou o ressarcimento financeiro tem causado diversos problemas de saúde mental aos ex-bolsistas. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/Impacto_ressarcimento_financeiro.pdf.png\">")
 )
 faq::faq(data = df, elementId = "faq", faqtitle = "Respostas a questões formuladas, dados coletados, respondidos e analisados por ex-bolsistas CsF")
 
