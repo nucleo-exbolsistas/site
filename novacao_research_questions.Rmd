@@ -35,7 +35,7 @@ Diferenças na proporcionalidade e técnicos/ex-bolsistas entre as agências (CN
 "H: Hipotetizamos que demorem mais de um ano.",
 "H: Hipotetizamos que a maior parte desses ex-bolsitas estudaram nos EUA e precisaram da CNO. Deste modo, assinaram a confissão de dívida com a União. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/Ressarcimento_Pais_Per_Plot.png\">",
 "H. Hipotetizamos que houve um aumento de ex-bolsistas que não retornaram pro Brasil após 2018 devido às crises política, econômica e sanitária que acometeram o país nesta época.",
-"H. Hipotetizamos que a obrigatoriedade do retorno ao Brasil e/ou o ressarcimento financeiro tem causado diversos problemas de saúde mental aos ex-bolsistas. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/Impacto_ressarcimento_financeiro.pdf.png\">")
+"H. Hipotetizamos que a obrigatoriedade do retorno ao Brasil e/ou o ressarcimento financeiro tem causado diversos problemas de saúde mental aos ex-bolsistas. <img src=\"https://raw.githubusercontent.com/nucleo-exbolsistas/site/master/plots/Impacto_ressarcimento_financeiro.png\">")
 )
 faq::faq(data = df, elementId = "faq", faqtitle = "Respostas a questões formuladas, dados coletados, respondidos e analisados por ex-bolsistas CsF")
 
